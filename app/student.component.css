@@ -1,0 +1,29 @@
+.search-box input {
+    width: 300px;
+}
+.search-box button {
+    position: relative;
+    left: 300px;
+    top : -35px;
+}
+
+.student-form{
+    background-color: #f2f3f4;
+    padding: 5px;
+}
+
+.student-form input:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input.ng-invalid {
+    border-left: 5px solid red;
+}
+
+button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#save {
+    padding-top: 25px;
+}

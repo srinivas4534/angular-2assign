@@ -1,0 +1,11 @@
+<div id="search-component">
+  <h4>Student Search</h4>
+  <input #searchBox id="search-box"  name="name"
+  (keyup)="search(searchBox.value)" (change) = "onChangeStudent(searchBox.value)" [(ngModel)] = "searchField"  
+    placeholder="Name.." />
+  <div>
+    <div *ngFor="let student of students | async" (click)="editStudent(student)" class="search-result">
+      {{student.name}}
+    </div>
+  </div>
+</div>

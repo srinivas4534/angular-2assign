@@ -1,0 +1,21 @@
+<div class="container" style="width : 350px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding : 5px
+    ;margin-top: 200px">
+  <h1>Login Form</h1>
+  
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+      
+        <label>User ID</label>
+        
+        <input type="text" class="form-control" id="userId" required name="userId" ngModel >
+    
+      
+        <label>Password</label>
+        <input type="password" class="form-control" id="pwd" name="pwd" ngModel required >
+     
+        <br>
+        <button type="Login" class="btn btn-success">Submit</button>
+      
+    </form>
+  
+</div>
